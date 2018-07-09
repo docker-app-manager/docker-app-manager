@@ -1,0 +1,61 @@
+### This is project is in a pre-alpha state so it might work or it might not, we are still far away from a stable release and any help is very welcome :smiley:
+
+# Docker App Manager
+
+Install, run and manage DockerApps with a command
+
+## First of all, what is a DockerApp? Did you just make that up?
+
+Yes.
+
+We needed a term for indicating a self-contained archive that contains all the information needed to run a certain application inside docker.
+You can see a DockerApp as an adaptable Dockerfile that works perfectly in every host system.
+
+Basically we turned this
+
+```
+docker run --volume=/home/federico/DockerApps/google-chrome/Volumes/Downloads:/home/dockerapp/Downloads --volume=/tmp/.X11-unix:/tmp/.X11-unix:rw --volume=/tmp/.dockerapp.google-chrome.xauth:/tmp/.dockerapp.google-chrome.xauth:rw --volume=/run/user/1000/pulse:/run/user/1000/pulse --env='XAUTHORITY=/tmp/.dockerapp.google-chrome.xauth' --env='DISPLAY=:0' dockerapp_google-chrome
+```
+
+into this
+
+```
+./dam run google-chrome
+```
+
+
+## Why?
+
+Short answer: we got tired of having dozens of bash scripts for running our applications inside Docker
+
+## How?
+
+Just clone the repository
+
+```
+git clone https://github.com/docker-app-manager/docker-app-manager.git && cd docker-app-manager && chmod +x dam
+```
+
+Update the DockerApps list
+
+```
+./dam update
+```
+
+Install a DockerApp
+
+```
+./dam install google-chrome
+```
+
+Run it
+
+```
+./dam run google-chrome
+````
+
+You should also find a link to the DockerApp in your DE's applications list
+
+## Cool but can you please make some sort of documentation?
+
+We will, I promise :sweat_smile:

@@ -1,0 +1,15 @@
+{
+  "name": "docker-app-manager",
+  "version": "0.1.0",
+  "description": "Docker App Manager",
+  "main": "dam",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+"
+  },
+  "author": "Federico Galatolo",
+  "license": "GPLv3"
+}

@@ -1,0 +1,3 @@
+#! /usr/bin/env node
+const dam = require("./cmd/dam.js")
+dam(...process.argv.slice(2))
