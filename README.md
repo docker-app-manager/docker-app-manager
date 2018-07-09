@@ -4,6 +4,8 @@
 
 Install, run and manage DockerApps with a command
 
+![demo-gif](https://i.imgur.com/zUEj9ms.gif)
+
 ## First of all, what is a DockerApp? Did you just make that up?
 
 Yes.
