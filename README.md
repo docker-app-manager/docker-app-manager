@@ -41,7 +41,10 @@ Short answer: we got tired of having dozens of bash scripts for running our appl
 Just clone the repository
 
 ```
-git clone https://github.com/docker-app-manager/docker-app-manager.git && cd docker-app-manager && chmod +x dam
+git clone https://github.com/docker-app-manager/docker-app-manager.git && \
+cd docker-app-manager && \
+npm install && \
+chmod +x dam
 ```
 
 Update the DockerApps list
