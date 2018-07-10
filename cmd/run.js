@@ -1,4 +1,3 @@
-const repos = require("../lib/repos.js")
 const apps = require("../lib/apps.js")
 
 function runCommand(appname){
