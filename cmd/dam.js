@@ -19,6 +19,10 @@ function damCommand(action){
         case "ls":
             require("./ls.js")(...args)
             break;    
+        case "search":
+            require("./search.js")(...args)
+            break;    
+            
         default:
             console.log(`Usage:
 ./dam update            Update the locals apps list repositories with the remotes one
