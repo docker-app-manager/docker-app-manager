@@ -25,11 +25,13 @@ function damCommand(action){
             
         default:
             console.log(`Usage:
-./dam update            Update the locals apps list repositories with the remotes one
+./dam update            Update the locals DockerApps list repositories with the remotes one
 ./dam install <app>     Install <app>
 ./dam run <app>         Run <app>
 ./dam uninstall <app>   Uninstall <app>
-./dam upgrade <app>     Upgrade <app>`)
+./dam upgrade <app>     Upgrade <app>
+./dam ls                Show all the installed DockerApps
+./dam search <query>    Search for query in local repositories`)
     }
 }
 
