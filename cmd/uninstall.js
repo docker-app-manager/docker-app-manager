@@ -4,13 +4,13 @@ const apps = require("../lib/apps.js")
 function uninstallCommand(appname){
     repos.getApp(appname).then(app => {
         apps.uninstallApp(app).then( () => {
-            console.log("App "+appname+" uninstalled!")
+            console.log("DockerApp "+appname+" uninstalled!")
         }).catch(e => {
             console.log("There was an error: "+e)
         })
     }).catch(e => {
         if(e) console.log("There was an error: "+e)
-        else console.log("App "+appname+" not found!")
+        else console.log("DockerApp "+appname+" not found!")
     })
 }
 
