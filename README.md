@@ -2,6 +2,12 @@
 
 # Docker App Manager
 
+
+[![GitHub package version](https://img.shields.io/github/package-json/v/docker-app-manager/docker-app-manager.svg?style=flat-square)](https://github.com/docker-app-manager/docker-app-manager)
+[![License](https://img.shields.io/github/license/docker-app-manager/docker-app-manager.svg?style=flat-square)](https://github.com/docker-app-manager/docker-app-manager/blob/master/LICENSE)
+
+
+
 Install, run and manage DockerApps with a command
 
 ![demo-gif](https://i.imgur.com/zUEj9ms.gif)
