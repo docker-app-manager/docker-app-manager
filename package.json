@@ -8,9 +8,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+"
+    "url": "https://github.com/docker-app-manager/docker-app-manager.git"
   },
-  "author": "Federico Galatolo",
+  "author": "Dam Team",
   "license": "GPLv3",
   "dependencies": {
     "fs-extra": "^6.0.1",
