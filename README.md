@@ -53,7 +53,7 @@ Update the DockerApps list
 ./dam update
 ```
 
-Install a DockerApp
+Install a DockerApp and go grab a beer because it will take some time
 
 ```
 ./dam install google-chrome
@@ -65,7 +65,15 @@ Run it
 ./dam run google-chrome
 ````
 
-You should also find a link to the DockerApp in your DE's applications list
+You can even pass arguments to it!
+
+```
+./dam run google-chrome www.reddit.com
+```
+
+You should also find a link to the DockerApp in your DE's applications list.
+
+If everything works fine, celebrate with the beer that you have taken earlier
 
 ## Cool but can you please make some sort of documentation?
 

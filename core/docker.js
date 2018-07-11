@@ -1,5 +1,7 @@
 const execSync = require('child_process').execSync
 
+// TODO: escape all '"' and "'" in docker arguments
+
 class DockerRunner {
     constructor(){
         this.capabilities = []
@@ -22,6 +24,18 @@ class DockerRunner {
         if(environment) for(let field of environment){
             this.environment.push(field)
         }
+    }
+
+    addArguments(args){
+        this.environment.push({
+            name: "DAM_ARGC",
+            value: args.length
+        })
+        for(let i in args)
+            this.environment.push({
+                name: "DAM_ARGV"+i,
+                value: args[i]
+            })
     }
 
     buildDockerString(){
