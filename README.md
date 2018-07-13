@@ -75,6 +75,10 @@ You should also find a link to the DockerApp in your DE's applications list.
 
 If everything works fine, celebrate with the beer that you have taken earlier
 
+## Where i can find a list of DockerApps?
+
+[This](https://github.com/docker-app-manager/docker-apps) is the official DockerApps repository but do not expect to find a lot of DockerApps at this stage of development
+
 ## Cool but can you please make some sort of documentation?
 
 We will, I promise :sweat_smile:
